@@ -1,0 +1,167 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #76a341;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Payment Form Styles */
+main {
+    flex-grow: 1;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.payment-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    border-color: #76a341;
+}
+
+.submit-btn {
+    background-color: #76a341;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #4a6f2c;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #76a341;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Contact Information Section Styles */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.contact-item {
+    text-align: center;
+    width: 30%;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: #76a341;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,297 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #54a346;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #54a346;
+}
+
+.buy-now {
+    color: #54a346;
+    font-weight: bold;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+    transition: 0.3s ease;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+}
+
+
+/* About Us Section */
+.about-us {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-us .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.about-content {
+    padding-top: 20px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #54a346;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Staff Section */
+.staff {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.staff h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #54a346;
+}
+
+.staff-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.staff-member {
+    text-align: center;
+    max-width: 250px;
+}
+
+.staff-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.staff-member h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.staff-member p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Mission Section */
+/* Mission Section */
+.mission {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.mission h2 {
+    font-size: 28px;
+    color: #54a346;
+    margin-bottom: 20px;
+}
+
+.mission h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #54a346;
+}
+
+.mission p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 40px; /* Adds space between paragraph and button */
+    max-width: 800px; /* Limits paragraph width */
+    margin-left: auto;
+    margin-right: auto; /* Centers paragraph */
+    line-height: 1.6; /* Adds better readability */
+}
+
+.view-recipes-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #6fbf4b; /* Green background */
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Adds space above the button */
+}
+
+.view-recipes-btn:hover {
+    background-color: #5aa43a; /* Darker green on hover */
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center; /* Change to center the text */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .footer-column {
+    width: 30%;
+    text-align: left; /* Ensures individual columns are left-aligned */
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .footer-column p,
+  .footer-column ul,
+  .footer-column li {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #333;
+  }
+  
+  .footer-column .social-icons a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footer-column .social-icons a:hover {
+    color: #333;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    background-color: #e1e1e1;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .staff-members {
+        flex-direction: column;
+    }
+
+    .staff-member {
+        margin-bottom: 30px;
+    }
+}
